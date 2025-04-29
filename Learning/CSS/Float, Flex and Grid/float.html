@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: white;
+      }
+
+      .top-p {
+        /* have to move padding by more than box width for it to apply */
+        /* margin-left: 200px; */
+        /* text-align: start; */
+      }
+
+      .second-p {
+        /* display: block;
+        /* text-align: start; */
+      }
+
+      .left {
+        float: left;
+        background-color: #FC466B;
+      }
+      .right {
+        float: right;
+        background-color: #3F5EFB;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .section {
+        width: 90%;
+        height: 150px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #222;
+      }
+
+      .box {
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+      }
+
+      .container {
+        border: 2px dashed #999;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      /* clearfix hack to make parent wrap floated children */
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .clear-both {
+        clear: both;
+      }
+    </style>
+    <title>Float</title>
+  </head>
+  <body>
+    <a href="index.html">home</a>
+    <a href="float2.html">float 2</a>
+    <h1>This is a float right example</h1>
+
+    <div class="section">
+      <div class="box left">Box 1</div>
+      <p class="top-p">
+        This paragraph wraps around the box floated to the left. Notice how text
+        flows on the right and underneath the floated element once it’s narrow
+        enough.
+      </p>
+      <p class="second-p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptas
+        veritatis, sed magni in ullam exercitationem dolor quod voluptates
+        aliquid dicta blanditiis pariatur delectus voluptatibus quas distinctio
+        rerum numquam assumenda ipsum optio officiis. Harum sapiente temporibus,
+        veritatis minima in consectetur suscipit inventore alias. Sequi eum odio
+        repudiandae architecto minus laudantium!
+      </p>
+    </div>
+    <div class="clear-both"></div>
+
+    <h1>This is a float right example</h1>
+
+    <div class="section">
+      <div class="box right">Box 2</div>
+      <p>
+        Here the box is floated to the right. Text wraps on the left side, and
+        continues beneath if there’s enough content.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, id.
+        Ullam perferendis assumenda, necessitatibus aperiam eveniet quae veniam
+        placeat natus laudantium. Similique minus minima ab laborum enim, ipsa
+        excepturi accusantium. Omnis, quae dolorum animi sed reiciendis
+        obcaecati quasi laudantium quo placeat velit voluptatum, provident
+        repellat accusamus amet praesentium distinctio sapiente?
+      </p>
+    </div>
+    <div class="clear-both"></div>
+
+    <h1>Multiple Floats in a Container</h1>
+    <div class="container clearfix">
+      <div class="box left">Box 1</div>
+      <div class="box left">Box 2</div>
+      <div class="box right">Box 3</div>
+      <p>
+        Without a clearfix (or a clearing element), the container’s height would
+        collapse because it doesn’t “see” floated children. The
+        <code>.clearfix</code> utility makes it wrap all floats.
+      </p>
+    </div>
+
+    h2>Manual Clear</h2>
+    <div class="box left">left</div>
+    <div class="box right">right</div>
+    <!-- this element pushes content below all floats -->
+    <div class="clear-both"></div>
+    <p style="color: #222;">
+      This paragraph comes below both floated boxes because of the <code>clear: both</code> element above.
+    </p>
+  </body>
+</html>

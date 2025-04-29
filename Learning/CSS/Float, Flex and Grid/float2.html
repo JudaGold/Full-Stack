@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float Demonstration</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      margin: 10px;
+      padding: 10px;
+      background: #3F5EFB;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    /* float examples */
+    .left   { float: left;  background: #3F5EFB; }
+    .right  { float: right; background: #FC466B; }
+
+    /* clearfix hack to make parent wrap floated children */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* simple container styling */
+    .container {
+      border: 2px dashed #999;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* for the clearfix demo below */
+    .clear-both {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">home</a>
+  <a href="float.html">float</a>
+  <h1>CSS Float Property Demo</h1>
+
+  <!-- 1. Float Left -->
+  <h2>Float Left</h2>
+  <div class="box left">float: left</div>
+  <p>
+    This paragraph wraps around the box floated to the left. Notice how text flows on the right and underneath the floated element once it’s narrow enough.
+  </p>
+  <div class="clear-both"></div>
+
+  <!-- 2. Float Right -->
+  <h2>Float Right</h2>
+  <div class="box right">float: right</div>
+  <p>
+    Here the box is floated to the right. Text wraps on the left side, and continues beneath if there’s enough content.
+  </p>
+  <div class="clear-both"></div>
+
+  <!-- 3. Multiple Floats & Container Collapse -->
+  <h2>Multiple Floats in a Container</h2>
+  <div class="container clearfix">
+    <div class="box left">Box 1</div>
+    <div class="box left">Box 2</div>
+    <div class="box right">Box 3</div>
+    <p>
+      Without a clearfix (or a clearing element), the container’s height would collapse because it doesn’t “see” floated children. The <code>.clearfix</code> utility makes it wrap all floats.
+    </p>
+  </div>
+
+  <!-- 4. Manual Clearing -->
+  <h2>Manual Clear</h2>
+  <div class="box left">Floated</div>
+  <div class="box left">Floated</div>
+  <!-- this element pushes content below all floats -->
+  <div class="clear-both"></div>
+  <p>
+    This paragraph comes below both floated boxes because of the <code>clear: both</code> element above.
+  </p>
+
+</body>
+</html>

@@ -1,5 +1,22 @@
-body {
-  border: 5px solid darkgrey;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+main {
+  max-width: 90%;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header, footer {
+  background-color: #9d54d8;
+  padding: 9px 0;
 }
 
 h1 {
@@ -8,7 +25,9 @@ h1 {
 }
 
 .car-image {
-  width: 40%;
+  min-width: 200px;
+  max-width: 600px;
+  width: 30%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -23,7 +42,9 @@ a,
 a:visited {
   text-decoration: none;
 }
-
+ol {
+  padding-left: 30px;
+}
 li {
   list-style: upper-roman;
 }
@@ -50,5 +71,6 @@ button:hover {
 }
 
 hr {
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
 }

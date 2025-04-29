@@ -3,28 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Challenge-1</title>
+    <title>Challenge-3</title>
     <link rel="stylesheet" href="./assests/styles.css" />
   </head>
   <body>
+    <a class="up-arrow" href="#">↑</a>
     <main>
+      <header>
+        <h1>The Right Address For Buying a Car</h1>
+      </header>
+
       <section>
         <article>
-          <h1>The Right Address For Buying a Car</h1>
-          <h1>LAMBORGHINI</h1>
+          <h1 style="padding-bottom: 20px">LAMBORGHINI</h1>
 
           <img src="./assests/lambo.jpg" alt="LAMBORGHINI" class="car-image" />
 
-          <p
-            style="
-              color: red;
-              text-align: center;
-              font-weight: 900;
-              font-size: large;
-            "
-          >
-            $30000
-          </p>
+          <div style="position: relative">
+            <p
+              style="
+                color: red;
+                text-align: center;
+                font-weight: 900;
+                font-size: large;
+              "
+            >
+              $30000
+            </p>
+            <button style="position: absolute; top: 0px; right: 30px">
+              Add to Basket
+            </button>
+          </div>
         </article>
       </section>
 
@@ -33,6 +42,11 @@
           <p>Free Shipping</p>
           <p>Call us and we will get in touch</p>
           <a href="https://www.lamborghini.com/en-en">More Information →</a>
+          <br />
+          <p class="colors one"></p>
+          <p class="colors two"></p>
+          <p class="colors three"></p>
+          <p class="colors four"></p>
         </article>
       </section>
 
@@ -48,9 +62,7 @@
         </article>
       </section>
 
-      <section class="basket">
-        <button>Add to Basket</button>
-      </section>
+      <section class="basket"></section>
       <hr />
       <footer>
         <p

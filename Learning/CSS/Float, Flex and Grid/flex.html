@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Test, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-wrapper {
+        margin: 50px;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .el-1{
+        background-color: red;
+        height: 100px;
+        /* all elements will go to max
+        if a center alignent is put on then will go to center
+        eg align-items in flex-wrapper */
+      }
+      .el-2{
+        background-color: orange;
+      }
+      .el-3{
+        background-color: yellow;
+        align-self: flex-start;
+      }
+      .el-4{
+        background-color: greenyellow;
+      }
+      .el-5{
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-wrapper">
+      <div class="el-1">HTML</div>
+      <div class="el-2">CSS</div>
+      <div class="el-3">JS</div>
+      <div class="el-4">BootStrap</div>
+      <div class="el-5">TailWind</div>
+    </div>
+  </body>
+</html>
