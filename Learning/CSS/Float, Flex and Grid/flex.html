@@ -3,14 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=Test, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS Flex</title>
     <style>
+      .main-wrapper {
+        display: flex;
+        border: 1px solid black;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+      }
+
       .flex-wrapper {
         margin: 50px;
         background-color: grey;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+         /*similair to margin, but just between them, top & bottom */
+      }
+
+      .el{
+        /* flex-grow: 2;  */
+        /* this controls how much an element grows with a page growth */
+        /* flex-shrink: 2;  */
+        /* this controls how much an element shrinks with a page change 
+        
+        Initial total basis: 300 + 300 + 300 = 900px
+
+        Container width: 600px
+
+        Overflow: 900 − 600 = 300px needs to be “given up” by the items.
+        A, B and C og size is 300px each.
+
+        A’s final size: 300 − 75 = 225px
+
+        B’s final size: 300 − 150 = 150px
+
+        C’s final size: 300 − 75 = 225px
+        
+        */
+        /* flex-basis: 150px;  */
+        /* this will make all elements to grow equally */
+        /* 
+        flex-grow – how much the item will grow relative to the rest
+
+        flex-shrink – how much the item will shrink relative to the rest
+
+        flex-basis – the item’s initial main size before free space is distributed */
+        flex: 2 2 150px; /* this is equivalent to the top 3 */
       }
       .el-1{
         background-color: red;
@@ -18,29 +61,50 @@
         /* all elements will go to max
         if a center alignent is put on then will go to center
         eg align-items in flex-wrapper */
+        /* flex-grow: 2;  */
+        /* all others without flex-grow are set to be one thing so this is 2/3rds */
       }
       .el-2{
         background-color: orange;
+        order: 1; /* this will make the element to go to the end of the flex container */
+        /* starts at 0 anything =ve goes to end and more =ve = more right and vice versa for negative */
+        /* flex-grow: 2; */
       }
       .el-3{
         background-color: yellow;
         align-self: flex-start;
+        /* flex-grow: 2; */
       }
       .el-4{
         background-color: greenyellow;
+        /* flex-grow: 2; */
+        /* this is ratio based */
       }
       .el-5{
         background-color: green;
+        /* flex-grow: 2; */
       }
     </style>
   </head>
   <body>
-    <div class="flex-wrapper">
-      <div class="el-1">HTML</div>
-      <div class="el-2">CSS</div>
-      <div class="el-3">JS</div>
-      <div class="el-4">BootStrap</div>
-      <div class="el-5">TailWind</div>
+    <div>
+      <a href="index.html">home</a>
+    </div>
+    <div class="main-wrapper">
+      <div class="flex-wrapper">
+        <div class="el el-1">HTML</div>
+        <div class="el el-2">CSS</div>
+        <div class="el el-3">JS</div>
+        <div class="el el-4">BootStrap</div>
+        <div class="el el-5">TailWind</div>
+      </div>
+      <div class="flex-wrapper">
+        <div class="el el-1">HTML</div>
+        <div class="el el-2">CSS</div>
+        <div class="el el-3">JS</div>
+        <div class="el el-4">BootStrap</div>
+        <div class="el el-5">TailWind</div>
+      </div>
     </div>
   </body>
 </html>

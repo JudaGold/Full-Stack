@@ -3,9 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=Test, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS Grid</title>
+    <style>
+      .nav {
+        text-align: center;
+      }
+
+      .grid-wrapper {
+        height: 500px;
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /*above to lines are the same*/
+        grid-template-rows: repeat(3, 1fr);
+        gap: 51px 50px;
+        margin: 50px;
+        padding: 20px;
+        background-color: black;
+        /* text-align: center; */
+        justify-content: center;
+        align-content: center;
+      }
+
+      .el{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        /* same as above */
+
+        display: grid;
+        place-items: center;
+      }
+
+      .el-1 {
+        background-color: red;
+        height: 100px;
+      }
+      .el-2 {
+        background-color: orange;
+        grid-column: 3/4;
+        /* grid-row: 1/2; */
+        grid-row: 1;
+      }
+      .el-3 {
+        background-color: yellow;
+      }
+      .el-4 {
+        background-color: green;
+      }
+      .el-5 {
+        background-color: indigo;
+        height: 240px;
+      }
+      .el-6 {
+        background-color: violet;
+        grid-column: 5;
+        grid-row: 5;
+      }
+      .el-7 {
+        background-color: blue;
+      }
+      .el-8 {
+        background-color: white;
+      }
+      .el-9 {
+        background-color: gold;
+      }
+      .el-10 {
+        background-color: skyblue;
+      }
+    </style>
   </head>
   <body>
-    test
+    <div class="nav">
+      <a href="index.html">home</a>
+    </div>
+    <div class="grid-wrapper">
+      <div class="el el-1">HTML</div>
+      <div class="el el-2">CSS</div>
+      <div class="el el-3">JS</div>
+      <div class="el el-4">BootStrap</div>
+      <div class="el el-5">TailWind</div>
+      <div class="el el-6">six</div>
+      <div class="el el-7">seven</div>
+      <div class="el el-8">eight</div>
+      <div class="el el-9">nine</div>
+      <div class="el el-10">ten</div>
+    </div>
   </body>
 </html>
