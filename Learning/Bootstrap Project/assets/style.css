@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #dc3545
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: black;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar img {
+  width: 200px;
+}
+
+.carousel-item {
+  max-height: calc(100vh - 90px);
+}

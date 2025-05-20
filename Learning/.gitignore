@@ -1,0 +1,14 @@
+# ─── Ignore all image files ─────────────────────────────
+# raster
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+# vector
+*.svg
+# icons
+*.ico
+# Photoshop, Illustrator, etc.
+*.psd
+*.ai
