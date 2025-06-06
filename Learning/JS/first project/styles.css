@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #660033;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background: #b5acac;
+  background: linear-gradient(
+    95deg,
+    rgba(181, 172, 172, 1) 1%,
+    rgba(122, 122, 128, 1) 49%,
+    rgba(89, 89, 89, 1) 80%,
+    rgba(77, 77, 77, 1) 100%
+  );
+}
+
+.j-header {
+  padding: 3rem 0;
+  font-size: 6rem;
+  color: var(--primary-color);
+}
+
+.j-top-right {
+  color: white;
+  text-align: start;
+  font-size: 4rem;
+  padding: 2rem 0 0 2rem;
+  position: absolute;
+  top: 0;
+}
+
+.j-top-score {
+  margin-bottom: 2rem;
+  text-align: start;
+}
+
+.j-top-right p {
+  display: inline;
+}
+
+.j-question-box {
+  color: var(--primary-color);
+  margin: 2rem;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 2rem 2.5rem;
+  background-color: white;
+  border: 0.5rem solid var(--primary-color);
+}
+
+.j-guess {
+  color: white;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.j-no-box {
+  border: 0.25rem solid white;
+  background: none;
+  height: 5rem;
+  margin: 1rem 0;
+  color: white;
+  font-size: 2rem;
+  max-width: 6rem;
+}
+
+.j-no-box:focus {
+  outline: none;
+  appearance: none;
+  box-shadow: none;
+}
+
+.j-buttons {
+  display: flex;
+  justify-content: center;
+}
+button{
+  margin: 3rem;
+  padding: 2rem;
+  font-weight: 800;
+  border-radius: 20%;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  color: white;
+  background-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.error{
+  color: rgb(247, 181, 0);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

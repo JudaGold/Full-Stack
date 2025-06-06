@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is in the box?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="j-header">What is in the box?</h1>
+    <section id="headOfPage">
+      <div class="j-top-right">
+        <div class="j-top-score">
+          Score:
+          <p id="score">49</p>
+        </div>
+        Highscore:
+        <p id="highScore">0</p>
+      </div>
+    </section>
+    <body>
+      <div id="hiddenNumber" class="j-question-box">
+        ?
+      </div>
+      <section id="guess" class="j-guess">
+        <p>( Please enter a number between 1 and 50 )</p>
+        <input id="noBox" class="j-no-box" min="1" max="50" type="number">
+        <p id="helpText">Lets's enter a number...</p>
+        <div class="j-buttons">
+          <button id="guessBtn">Guess</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </section>
+      <script type="module" src="script.js"></script>
+    </body>
+  </body>
+</html>
