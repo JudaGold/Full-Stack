@@ -28,7 +28,7 @@ const addHtml = function (dataObj) {
     </div>
   </div>
   `;
-  testSection.insertAdjacentHTML('afterbegin', temp);
+  testSection.insertAdjacentHTML("afterbegin", temp);
 };
 
 const fetchData = function (url, errorMessage = "Error fetching data") {
@@ -39,12 +39,13 @@ const fetchData = function (url, errorMessage = "Error fetching data") {
   });
 };
 
-const getData = function(name) {
+const getData = function (name) {
   const request = fetchData(
     `https://restcountries.com/v3.1/name/${name}`,
     `couldnt load data for country ${name}`
   )
     .then((data) => {
+      console.log(data);
       addHtml(data[0]);
       const borders = data[0].borders;
       if (!borders) throw new Error(`No borders found for country ${name}`);
@@ -56,9 +57,12 @@ const getData = function(name) {
     .then((data) => data.forEach((country) => addHtml(country)))
     .catch((error) => {
       console.log("Error fetching data:", error);
-      testSection.insertAdjacentText('beforeend' ,`Error fetching data: ${error}`);
+      testSection.insertAdjacentText(
+        "beforeend",
+        `Error fetching data: ${error}`
+      );
     })
     .finally(() => console.log("Data fetching completed."));
-}
+};
 
-getData("iceland");
+getData("russia");
