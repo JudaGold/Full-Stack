@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1><span style="color: white;">Generate a</span> random password</h1>
+        <p style="color: white;">Never use an insecure password again.</p>
+        <input id="passwordLength" type="number" placeholder="password length" min="1" max="15">
+        <button onclick="generatePasswords()">Generate passwords</button>
+        <hr>
+        <div class="container">
+            <p id="firstPassowrd" onclick="copyText(this.id)" class="passwords"></p>
+            <p id="secondPassowrd" onclick="copyText(this.id)" class="passwords"></p>
+        </div>
+        <p id="error" class="error"></p>
+        <script src="index.js"></script>
+    </body>
+</html>

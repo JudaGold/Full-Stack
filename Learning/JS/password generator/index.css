@@ -1,0 +1,68 @@
+body {
+    background-color: #1F2937;
+    margin: 2rem;
+    color: #4ADF86;
+}
+
+input {
+    background-color: #273549;
+    color: #10B981;
+    border-radius: 0.25rem;
+    padding: 10px 17px;
+    border: none;
+    min-width: 8rem;
+    margin-right: 1rem;
+}
+
+input::placeholder {
+    color: #10B981;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    color: white;
+    background-color: #10B981;
+    border-radius: 0.25rem;
+    padding: 10px 17px;
+    border: none;
+    letter-spacing: 0.25px;
+    margin: 1rem 0;
+}
+
+hr {
+    background-color: #2F3E53;
+    height: 2px;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    gap: 1rem;
+}
+
+.passwords {
+    min-width: 10rem;
+    min-height: 1.5rem;
+    padding: 0.25rem 2rem;
+    background-color: #273549;
+    align-content: center;
+    overflow: auto;
+    border-radius: 6px;
+}
+
+.error{
+    margin: 0.5rem 0;
+    padding: 0.5rem 1.5rem;
+    display: none;
+    color: red;
+    background-color: #273549;
+    border-radius: 6px;
+}
