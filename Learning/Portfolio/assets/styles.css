@@ -26,7 +26,7 @@ html {
   font-size: 62.5%; /*if give font size of 100px will look like 62.5px on a page*/
   /* overflow-x: hidden; */
   font-family: var(--font-family);
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 /** body is the main content of the page */
 body {
@@ -104,7 +104,6 @@ span {
   justify-content: center;
   align-items: center;
 }
-
 
 .home-content h3 {
   font-size: 3rem;
@@ -195,7 +194,6 @@ span {
 }
 
 .about-img:hover .top-image .top {
-  
   box-shadow: none;
 }
 
@@ -300,6 +298,9 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .portfolio .portfolio-container .portfolio-box {
@@ -325,7 +326,7 @@ span {
 }
 
 .portfolio-box .portfolio-layer {
-  color:white;
+  color: white;
   position: absolute;
   top: 0;
   left: 0;
@@ -347,7 +348,7 @@ span {
 
 .portfolio-box .portfolio-layer p {
   font-size: 3rem;
-  margin: 2rem 0;;
+  margin: 2rem 0;
 }
 
 .portfolio-box .portfolio-layer a i {
@@ -358,6 +359,11 @@ span {
   border-radius: 50%;
 }
 
+.portfolio-box .portfolio-layer a i:hover {
+  color: var(--main-color);
+  border: 3px solid var(--main-color);
+  box-shadow: 0 0 2rem var(--main-color);
+}
 /* ------------------------PORTFOLIO------------------------ */
 
 /* ------------------------CONTACT------------------------ */
@@ -386,7 +392,8 @@ span {
   flex-wrap: wrap;
 }
 
-.contact form .form-group input, .contact form textarea {
+.contact form .form-group input,
+.contact form textarea {
   background-color: var(--secondary-color);
   padding: 1.5rem;
   color: var(--text-color);
@@ -398,7 +405,6 @@ span {
 .contact form .form-group input {
   width: 49%;
 }
-
 
 .contact form textarea {
   resize: none;
@@ -426,7 +432,7 @@ span {
   padding: 1rem;
 }
 
-.footer a i:hover{
+.footer a i:hover {
   border: 2px solid var(--text-color);
   color: var(--text-color);
   box-shadow: 0 0 2rem var(--text-color);
@@ -456,12 +462,28 @@ span {
   html {
     font-size: 55%;
   }
+
+  .portfolio .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio .portfolio-container h3 {
+    font-size: 4rem;
+  }
+
+  .portfolio .portfolio-container p {
+    font-size: 3rem;
+  }
+
+  .portfolio .portfolio-container a i {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
   section {
     padding: 10rem 3% 2rem;
-  }  
+  }
 
   .header {
     padding: 2rem 3%;
@@ -477,6 +499,22 @@ span {
 
   .portfolio {
     padding: 7rem;
+  }
+
+  .portfolio .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio .portfolio-container h3 {
+    font-size: 4rem;
+  }
+
+  .portfolio .portfolio-container p {
+    font-size: 3rem;
+  }
+
+  .portfolio .portfolio-container a i {
+    font-size: 3rem;
   }
 }
 
@@ -502,15 +540,15 @@ span {
     flex-direction: column;
   }
 
-  .home-content h3{
+  .home-content h3 {
     font-size: 2.5rem;
   }
 
-  .home-content h1{
+  .home-content h1 {
     font-size: 5rem;
   }
 
-  .home-img img{
+  .home-img img {
     margin-top: 4rem;
     width: 70vw;
   }
@@ -536,7 +574,7 @@ span {
     font-size: 2rem;
   }
 
-  .btn{
+  .btn {
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
@@ -547,19 +585,19 @@ span {
 
   .portfolio .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
-  }  
+  }
 
-  .portfolio .portfolio-container h3{
-    font-size: 4rem;
-  }  
+  .portfolio .portfolio-container h3 {
+    font-size: 2.8rem;
+  }
 
-  .portfolio .portfolio-container p{
+  .portfolio .portfolio-container p {
+    font-size: 2rem;
+  }
+
+  .portfolio .portfolio-container a i {
     font-size: 3rem;
-  }  
-
-  .portfolio .portfolio-container a i{
-    font-size: 3rem;
-  }  
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -570,20 +608,34 @@ span {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .portfolio .portfolio-container h3{
+  .portfolio .portfolio-container h3 {
     font-size: 3rem;
-  }  
+  }
 
-  .portfolio .portfolio-container p{
+  .portfolio .portfolio-container p {
     font-size: 3rem;
-  }  
+  }
 
-  .portfolio .portfolio-container a i{
-    font-size: 2rem;
-  } 
+  .portfolio .portfolio-container a i {
+    font-size: 3rem;
+  }
 
   .contact form .form-group input {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .portfolio .portfolio-container h3 {
+    font-size: 2.3rem;
+  }
+
+  .portfolio .portfolio-container p {
+    font-size: 2rem;
+  }
+
+  .portfolio .portfolio-container a i {
+    font-size: 2rem;
   }
 }
 
@@ -595,17 +647,42 @@ span {
     width: 80vw;
   }
 
-  .portfolio .portfolio-container h3{
+  .portfolio .portfolio-container h3 {
     font-size: 3rem;
-  }  
+  }
 
-  .portfolio .portfolio-container p{
+  .portfolio .portfolio-container p {
     font-size: 2rem;
-  }  
+  }
 
-  .portfolio .portfolio-container a i{
+  .portfolio .portfolio-container a i {
     font-size: 2rem;
-  } 
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-img img {
+    width: 80vw;
+  }
+  .about-img img {
+    width: 80vw;
+  }
+
+  .portfolio .portfolio-container h3 {
+    font-size: 2rem;
+  }
+
+  .portfolio .portfolio-container p {
+    font-size: 1.5rem;
+  }
+
+  .portfolio .portfolio-container a i {
+    font-size: 1.5rem;
+  }
 
   .footer {
     flex-direction: column-reverse;

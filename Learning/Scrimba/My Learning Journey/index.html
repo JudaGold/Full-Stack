@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <h1 class="opposite">My Learning Journal</h1>
+        <div>
+          <ul>
+            <li>
+              <a
+                class="opposite"
+                href="#home"
+                title="All Posts"
+                data-home="test"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="opposite"
+                href="#about-me"
+                title="About Me"
+                data-about-me="true"
+                >About Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro" class="intro" data-show-full-post="temp"></section>
+      <section id="full-post" class="full-post hide"></section>
+
+      <section id="about-me" class="about-me hide">
+        <div class="about-me-header">
+          <img src="assets/profile-pic.png" alt="Priofile pic." />
+          <div>
+            <h2>
+              Hi there! My name is Juda and welcome to my learning journal.
+            </h2>
+            <h3>
+              After several months of learning in the Frontend Developer Career
+              Path, I've made the big jump over to the Bootcamp to get expert
+              code reviews of my Solo Projects projects and meet like-minded
+              peers.
+            </h3>
+          </div>
+        </div>
+
+        <p class="details">
+          <span class="title">How I stay committed to learning</span> I like to
+          think of myself as a lifelong learner. I used to spend hours and hours
+          learning, then try to create simple projects using what I learned or
+          work new techniques into existing projects. While that was fun, I felt
+          like it would be helpful to share what I was learning and most things
+          about my journey with the world.
+          <span class="title">How I got started</span> I started simple and
+          gradually grew my learning journal site. I would take notes about what
+          I was learning. After each learning session, I'd use my notes to not
+          only reflect on what I learned but also write short summaries of what
+          I learned using my own words. That helped me grok what I was learning,
+          and I realized that posting my learning summaries was also helping
+          others learn and stay motivated.
+        </p>
+        <h4 data-home="true">All Posts</h4>
+      </section>
+      <section id="posts" class="posts"></section>
+    </main>
+
+    <footer class="opposite">
+      <h3>My Learning Journal</h3>
+      <p>&copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

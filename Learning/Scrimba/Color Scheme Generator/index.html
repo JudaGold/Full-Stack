@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="colors" class="colors">
+        <form id="color-choice" class="color-choice">
+          <input type="color" id="color" />
+          <select name="color-select" id="color-scheme">
+            <option value="monochrome" for="color-select">Monochrome</option>
+            <option value="monochrome-dark" for="color-select">
+              Monochrome-Dark
+            </option>
+            <option value="monochrome-light" for="color-select">
+              Monochrome-Light
+            </option>
+            <option value="analogic" for="color-select">Analogic</option>
+            <option value="complement" for="color-select">Complement</option>
+            <option value="analogic-complement" for="color-select">
+              Analogic-Complement
+            </option>
+            <option value="triad" for="color-select">Triad</option>
+            <option value="quad" for="color-select">Quad</option>
+          </select>
+          <button type="submit">Get color scheme</button>
+        </form>
+        <div id="color-container" class="color-container">
+          <!-- <div id="color-pallete" class="color-pallete"></div> -->
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

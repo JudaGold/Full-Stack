@@ -1,0 +1,169 @@
+/** general */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Smythe", sans-serif;
+}
+
+hr {
+  width: 90%;
+}
+
+/** typography */
+
+h1,
+h2 {
+  position: relative;
+  left: 6%;
+  overflow: hidden;
+}
+
+h1 {
+  top: 15%;
+}
+
+h2 {
+  font-size: 1.65rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+/** sections */
+
+/* header */
+header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background-image: url("./assets/header.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* body/menu */
+.menu-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  font-size: 4rem;
+  margin: 2rem 0.75rem;
+}
+
+.menu-ingredients {
+  margin: 0;
+  color: #8b8b8b;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.right i {
+  color: #3c3c3c;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-right: 2rem;
+  border: 2px solid #dedede;
+  border-radius: 50%;
+}
+
+.menu-buy-item i:hover {
+  color: #333;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+}
+
+.menu-item hr {
+  border: 1px solid #d2d2d2;
+}
+
+/* summary */
+
+.summary {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.summary hr {
+  border: 1px solid #393333;
+}
+
+.total {
+  display: flex;
+  margin: 1rem 2rem;
+}
+
+.summary button {
+  color: #bbb;
+  margin-left: 1rem;
+  border: none;
+  background-color: white;
+}
+
+/* footer */
+
+.footer button,
+.form button {
+  width: calc(100% - 4rem);
+  margin: 1rem 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #16db99;
+  border: none;
+  border-radius: 0.25rem;
+  transition: 0.25s all ease-in-out;
+}
+
+.footer button:not(:disabled):hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
+/* modal */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.form {
+  position: relative;
+  background-color: #fff;
+  width: 300px;
+  margin: 50% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  border-radius: 2rem;
+}
+
+.form input {
+  /* display: block; */
+  /* width: fit-content; */
+  color: #757575;
+  border: 1px solid #757575;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin: 1rem;
+}
