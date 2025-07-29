@@ -1,0 +1,143 @@
+:root {
+  --bg: black;
+  --gold: gold;
+  --dark-gold: darkgoldenrod;
+  --brown: #2b2724;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--gold);
+  font-family: "Roboto", sans;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  background-color: var(--brown);
+  border-radius: 1rem;
+  background-image: linear-gradient(180deg, var(--brown) 60%, var(--dark-gold));
+}
+
+main > h1 {
+  font-size: 2.5em;
+  letter-spacing: 1.3px;
+  background-image: linear-gradient(90deg, var(--gold), var(--dark-gold));
+  font-family: "Saira Stencil One", serif;
+  color: transparent;
+  background-clip: text;
+  margin: 1.2rem;
+}
+
+main > img {
+  width: 40%;
+  margin-bottom: 1em;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.price-container,
+form {
+  width: 100%;
+  align-self: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.status,
+form > .form-label {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  left: 14%;
+  z-index: 1;
+  background-color: var(--brown);
+  padding: 0 8px;
+}
+
+.price,
+form > div {
+  border: 2px solid var(--gold);
+  border-radius: 0.4rem;
+  padding: 1rem 1.5rem;
+  width: 80%;
+  margin: 1rem auto;
+  text-align: start;
+}
+
+form {
+  position: relative;
+}
+
+form > div {
+  padding: 0rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+form > div > p {
+  display: inline-block;
+  border-right: 1px solid var(--gold);
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  margin: 0;
+  font-size: x-large;
+}
+
+form > div > input {
+  color: whitesmoke;
+  font-size: x-large;
+  width: 100%;
+  padding-left: 1.5rem;
+  background: none;
+  border: none;
+}
+
+button {
+  width: 80%;
+  padding: 1.1rem;
+  font-size: x-large;
+  color: var(--brown);
+  background-image: linear-gradient(90deg, var(--gold), var(--dark-gold));
+  border: 2px solid var(--dark-gold);
+  border-radius: 0.5rem;
+}
+
+input[type="number"]:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.info {
+    background-color: var(--brown);
+    padding: 0.1rem 3rem;
+    border-radius: 1rem;
+    margin: 2rem;
+}

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 20px #242424;
+}
+
+main {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1.time {
+  text-align: center;
+  font-size: 3em;
+}
+
+div#crypto {
+  font-size: 1.3rem;
+}
+
+div#crypto-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+div#crypto-top > span {
+  margin-left: 10px;
+}
+
+div#thumbnails > a {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: darkblue;
+  margin-bottom: 0.35em;
+}
+
+div#thumbnails > a:hover {
+  color: white;
+}
+
+i {
+  margin-right: 0.2rem;
+}
+
+div#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-self: flex-start;
+  margin-top: -20px;
+}
+
+div#weather > img {
+  width: 70px;
+}
+
+p.weather-city {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  margin-top: -10px;
+}
+
+p.weather-temp {
+  font-size: 1.7rem;
+  margin-left: -10px;
+}

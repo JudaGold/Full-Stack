@@ -1,0 +1,13 @@
+{
+  "name": "golddigger",
+  "version": "1.0.0",
+  "description": "An app where node is used to purhcase gold and commit transaction to a file imitating a db",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Juda",
+  "license": "ISC"
+}

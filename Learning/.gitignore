@@ -12,3 +12,8 @@
 # Photoshop, Illustrator, etc.
 *.psd
 *.ai
+*.map
+*.ts
+*.mts
+*.mjs
+node_modules/
