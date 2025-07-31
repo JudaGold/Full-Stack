@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judas Portfolio</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "uLFLp0smEzcNtT2QC",
+        });
+      })();
+    </script>
 
     <link
       rel="stylesheet"
@@ -11,7 +24,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Judas Portfolio</title>
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -27,7 +39,7 @@
     </header>
     <section class="home" id="home">
       <div class="home-content">
-        <h3>Hello world and welcome to...</h3>
+        <h3>Hello world and welcome to<span>...</span></h3>
         <h1><span>Juda Dev</span></h1>
         <h3>I am a <span>Fullstack Developer</span></h3>
         <p>

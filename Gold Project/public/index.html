@@ -32,9 +32,11 @@
         <p id="status" class="status">
           <span>Not Connected <i class="fa-solid fa-circle red"></i></span>
         </p>
-        <p id="price" class="price">$----,-- / Oz*</p>
+        <p id="price" class="price">
+          $<span id="live-price">----,--</span> / Oz*
+        </p>
       </section>
-      <form>
+      <form id="buy-gold">
         <label for="amount-to-invest" class="form-label"
           >Amount to invest</label
         >
@@ -42,13 +44,20 @@
           <p>$</p>
           <input
             type="number"
+            step="0.01"
             name="amount-to-invest"
             id="amount-to-invest"
             placeholder="100.00"
           />
         </div>
-        <button>Invest Now!</button>
+        <button id="buy-gold-btn" disabled>Invest Now!</button>
       </form>
+
+      <section
+        id="summary-container"
+        class="summary-container hidden"
+      ></section>
+
       <p class="info">* 1oz = 1 troy ounce of 24 Carat Gold</p>
     </main>
     <script type="module" src="index.js"></script>

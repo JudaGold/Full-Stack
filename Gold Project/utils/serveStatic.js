@@ -1,6 +1,7 @@
 import path from "node:path";
 import fs from "node:fs/promises";
 import { getContentType } from "./getContentType.js";
+import { sendResponse } from "./sendResponse.js";
 
 export async function serveStatic(req, res, pathToFiles) {
   const publicDir = path.join(pathToFiles, "public");
@@ -14,10 +15,15 @@ export async function serveStatic(req, res, pathToFiles) {
 
   try {
     const pageData = await fs.readFile(filePath);
-    res.statusCode = 200;
-    res.setHeader("Content-Type", contentType);
-    res.end(pageData);
+    await sendResponse(res, 200, contentType, pageData);
   } catch (err) {
-    console.log(err);
+    if (err.code !== "ENOENT") console.error(err);
+    try {
+      const errorFilePath = path.join(publicDir, "404.html");
+      const notFOundPage = await fs.readFile(errorFilePath);
+      await sendResponse(res, 404, "text/html", notFOundPage);
+    } catch (error) {
+      console.log(error);
+    }
   }
 }

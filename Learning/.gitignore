@@ -17,3 +17,4 @@
 *.mts
 *.mjs
 node_modules/
+*.env

@@ -1,0 +1,188 @@
+[
+  {
+    "livePrice": "2003.48",
+    "amount": "1234",
+    "UUID": "13744379-e8f3-4431-bf00-6ea5a56b22c7",
+    "createDate": "12:44:43 PM GMT+2"
+  },
+  {
+    "livePrice": "2006.36",
+    "amount": "1234",
+    "UUID": "b8847aed-a055-45de-a7cf-2baaeadf1717",
+    "createDate": "12:44:48 PM GMT+2"
+  },
+  {
+    "livePrice": "2008.33",
+    "amount": "234",
+    "UUID": "05d3e18e-0c21-4ef4-a4ad-4ee599f3665d",
+    "createDate": "12:47:12 PM GMT+2"
+  },
+  {
+    "livePrice": "2003.24",
+    "amount": "123",
+    "UUID": "e635b446-8b4e-43dd-9009-781a74810ad5",
+    "createDate": "12:47:47 PM GMT+2"
+  },
+  {
+    "livePrice": "2018.62",
+    "amount": "",
+    "UUID": "72dd453a-4669-4c13-832e-8732709d721a",
+    "createDate": "1:25:15 PM GMT+2"
+  },
+  {
+    "livePrice": "2009.83",
+    "amount": "2020",
+    "UUID": "c3563189-c504-4766-b58b-1b8c1afbfd38",
+    "createDate": "1:36:44 PM GMT+2"
+  },
+  {
+    "livePrice": "2007.13",
+    "amount": "2020",
+    "UUID": "af918ccb-2993-456a-b408-ea2ae6d91218",
+    "createDate": "1:38:47 PM GMT+2"
+  },
+  {
+    "livePrice": "2001.57",
+    "amount": "2020",
+    "UUID": "20c34691-af4c-48cc-9cb6-f06cbf3bc607",
+    "createDate": "1:38:55 PM GMT+2"
+  },
+  {
+    "livePrice": "2016.28",
+    "amount": "2020.65",
+    "UUID": "cc17d3db-b62c-49f4-a74d-951ab8184242",
+    "createDate": "1:40:32 PM GMT+2"
+  },
+  {
+    "livePrice": "2016.28",
+    "amount": "2020.65",
+    "UUID": "fc326a85-c2de-4f6f-b965-c83010558d25",
+    "createDate": "1:40:36 PM GMT+2"
+  },
+  {
+    "livePrice": "2000.25",
+    "amount": "2020.65",
+    "UUID": "6a03ca2a-e10a-40a5-a00c-bd1977d0c5b1",
+    "createDate": "1:40:43 PM GMT+2"
+  },
+  {
+    "livePrice": "2011.96",
+    "amount": "2020.65",
+    "UUID": "251ef91c-587f-40a2-b5af-5d2aa40e0de8",
+    "createDate": "1:41:03 PM GMT+2"
+  },
+  {
+    "livePrice": "2002.36",
+    "amount": "12345",
+    "UUID": "fa24319b-c159-45eb-b001-1f0d07130632",
+    "createDate": "1:43:39 PM GMT+2"
+  },
+  {
+    "livePrice": "2013.09",
+    "amount": "2050.25",
+    "UUID": "8c20bb27-b684-4d29-afc6-eac085236811",
+    "createDate": "1:46:41 PM GMT+2"
+  },
+  {
+    "livePrice": "2018.67",
+    "amount": "2050.25",
+    "UUID": "9dde0868-8253-4341-b057-6452a35fc3d4",
+    "createDate": "1:47:12 PM GMT+2"
+  },
+  {
+    "livePrice": "2018.67",
+    "amount": "2050.25",
+    "UUID": "c5830a2a-803d-4770-be24-699f1b2ab761",
+    "createDate": "1:47:15 PM GMT+2"
+  },
+  {
+    "livePrice": "2014.90",
+    "amount": "2050.25",
+    "UUID": "2f8d6e21-5d7c-4f39-840a-b796a5a23e07",
+    "createDate": "1:47:17 PM GMT+2"
+  },
+  {
+    "livePrice": "2008.54",
+    "amount": "2050.25",
+    "UUID": "26767e75-318c-437b-b1a1-e944aa46e778",
+    "createDate": "1:47:48 PM GMT+2"
+  },
+  {
+    "livePrice": "2002.38",
+    "amount": "2050.32",
+    "UUID": "c41884b2-5dac-4d1e-bf41-150524366072",
+    "createDate": "1:47:56 PM GMT+2"
+  },
+  {
+    "livePrice": "2004.84",
+    "amount": "2050.32",
+    "UUID": "6b1a15d6-5850-4f55-86d5-08e3035a80c4",
+    "createDate": "1:48:06 PM GMT+2"
+  },
+  {
+    "livePrice": "2016.62",
+    "amount": "",
+    "UUID": "2fc8f060-7b8a-4596-a1df-54279dd2c461",
+    "createDate": "1:58:49 PM GMT+2"
+  },
+  {
+    "livePrice": "2011.40",
+    "amount": "2343",
+    "UUID": "6e340862-01d0-4151-b1e7-b5bf2f4faae5",
+    "createDate": "2:01:13 PM GMT+2"
+  },
+  {
+    "livePrice": "2002.74",
+    "amount": "1",
+    "UUID": "a57894d2-69db-4ebd-b028-2d6e126cc449",
+    "createDate": "2:01:57 PM GMT+2"
+  },
+  {
+    "livePrice": "2007.44",
+    "amount": "22",
+    "UUID": "02e95b3d-02f3-4c7c-9a3c-df6fd968c611",
+    "createDate": "2:02:02 PM GMT+2"
+  },
+  {
+    "livePrice": "2010.66",
+    "amount": "223",
+    "UUID": "8d9e880f-5c5e-467a-b779-a17d7ed38936",
+    "createDate": "2:02:06 PM GMT+2"
+  },
+  {
+    "livePrice": "2009.92",
+    "amount": "1234",
+    "UUID": "87fb8ba2-90b9-418a-ae92-f1fc55129107",
+    "createDate": "2:04:23 PM GMT+2"
+  },
+  {
+    "livePrice": "2014.28",
+    "amount": "1234",
+    "UUID": "c1270d28-601b-424c-a322-de07c742ff27",
+    "createDate": "2:04:44 PM GMT+2"
+  },
+  {
+    "livePrice": "2014.28",
+    "amount": "1234",
+    "UUID": "da6e5885-7d7c-4def-8a7b-09ffb79eebdd",
+    "createDate": "2:04:46 PM GMT+2"
+  },
+  {
+    "livePrice": "2015.42",
+    "amount": "1234",
+    "UUID": "5e036e9d-8d30-460e-802a-c67d7ac19333",
+    "createDate": "2:05:36 PM GMT+2"
+  },
+  {
+    "livePrice": "2019.82",
+    "amount": "1235.24",
+    "UUID": "e0370320-cccd-457d-8e40-3beaf6bf1ec3",
+    "createDate": "2:06:35 PM GMT+2"
+  },
+  {
+    "livePrice": "2019.82",
+    "amount": "1235.24",
+    "UUID": "d1d9a02e-6f3a-42a4-a120-9a79e2094052",
+    "createDate": "2:06:37 PM GMT+2"
+  }
+]
