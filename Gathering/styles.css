@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #140b42;
+}
+
+li {
+  display: inline-block;
+  margin-right: 3em;
+}
+
+section#main-image{
+  display: flex;
+}
+
+#main-image {
+  background-image: url("./assets/Rectangle.png");
+  background-size: cover;
+}

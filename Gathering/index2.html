@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Gathering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+    <style>
+      * {
+  font-family: "Montserrat", sans-serif !important;
+}
+/* --- Global Container --- */
+.container {
+  padding: 3rem 3rem 0 3rem;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+  background-color: #140b42;
+  color: white;
+  padding: 1rem 0;
+}
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3em;
+}
+.header-logo {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  position: relative;
+  background-image: url("https://framerusercontent.com/images/YTI5gDtglDqcGEfXHv0WTztFAN8.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section > img {
+  margin-bottom: 1em;
+  z-index: 2;
+  width: 20%;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #ca4f69;
+  opacity: 0.8;
+}
+
+/* --- General Section Styling --- */
+.content-section {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.mega {
+  color: #ca4f69;
+}
+
+/* --- About & Event Info Section --- */
+#about > div {
+  background-color: #fafafa;
+  margin-bottom: 3em;
+}
+
+#about .about-title {
+  color: #ca4f69;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+#about .about-description {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+.event-info-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.event-info-box p {
+  font-size: 1rem;
+}
+
+.event-info-box .event-info,
+.event-info-box .event-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 0.5em 5em;
+  background-color: #fcf4f5;
+  margin-bottom: 1.6em;
+  font-weight: 500;
+}
+
+.event-info-box .event-info p {
+  padding: 0;
+  margin: 0;
+}
+
+.event-info-box .event-info .event-date {
+  font-size: 2.1rem;
+  color: #140b42;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+.event-info-box .event-info .event-location {
+  font-size: 0.7rem;
+  color: #ca4f69;
+}
+
+.register-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ca4f69;
+  padding: 1rem 3rem;
+  color: #ca4f69;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.register-now:hover {
+  background-color: #ca4f69;
+  color: white;
+}
+
+.register-now > p {
+  text-align: right;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 100;
+}
+
+.register-btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  font-size: 2em;
+  font-weight: 100;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+  margin-bottom: 1.3em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.register-btn:hover {
+  background-color: white;
+  color: #ca4f69;
+}
+
+/* --- Highlights Section --- */
+#highlights {
+  background-color: #ca4f69;
+  color: white;
+  text-align: center;
+}
+#highlights.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlights-main-title {
+  font-size: 2.5rem;
+  color: #140b42;
+  margin: 0;
+}
+.highlight-item {
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+.highlight-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.highlight-description {
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+}
+
+.highlight-description > span {
+  font-weight: bolder;
+  text-shadow: 0 0 2px white;
+}
+
+.highlight-item img {
+  width: 45%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Partnership Section --- */
+#partner > div {
+  background-color: #f1f2f5;
+  margin: 0;
+}
+
+#partner .partner-image {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  display: block;
+}
+.partner-title {
+  color: #ca4f69;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.partner-description {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+.partner-with-us-button {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  border: 1px solid #6b7280;
+  color: #140b42;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+.partner-with-us-button:hover {
+  background-color: #140b42;
+  color: white;
+  border-color: #140b42;
+}
+
+/* --- Footer Section --- */
+.main-footer {
+  text-align: center;
+  border-bottom: 60px #ca4f69 solid;
+}
+.footer-contact-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.footer-contact-email {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+.footer-credit {
+  color: #6b7280;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.main-footer img {
+  width: 100%;
+  margin: 0;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .hero-logo-text {
+    font-size: 4rem;
+  }
+  .hero-logo-the {
+    font-size: 1.5rem;
+    left: -2rem;
+  }
+  .hero-tagline {
+    font-size: 2rem;
+  }
+  .main-header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .content-section {
+    grid-template-columns: 1fr;
+  }
+
+  #about .about-description {
+    font-size: 1.5rem;
+  }
+}
+
+    </style>
+  </head>
+  <div>
+    <!-- Header -->
+    <div class="main-header">
+      <div class="container">
+        <img src="./assets/The Gathering logo.png" alt="The Gathering Logo." />
+        <nav class="main-nav">
+          <a href="#">Register</a>
+          <a href="#">Partner</a>
+          <a href="#">Learn More</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <img src="./assets/Rectangle.png" alt="" />
+      <img src="./assets/Group.png" alt="" />
+    </div>
+  </div>
+
+  <!-- About & Event Info Section -->
+  <div id="about" class="container">
+    <div class="content-section">
+      <div>
+        <h2 class="about-title righteous-regular uppercase">
+          About The Gathering
+        </h2>
+        <p class="about-description">
+          <span style="font-weight: bold" class="uppercase">The Gathering</span>
+          is a powerful evening of Jewish women’s unity, connection, and
+          inspiration. Join women from across Washington State for a mega
+          challah bake where hundreds will knead, braid, and bless together,
+          followed by an uplifting concert with renowned singer Devorah
+          Schwartz. It’s a night to nourish the soul, bond through tradition,
+          and celebrate the strength and spirit of Jewish sisterhood.
+        </p>
+      </div>
+      <div class="event-info-box">
+        <div class="event-desc">
+          <p>
+            A
+            <span class="mega righteous-regular uppercase"
+              >mega challah bake</span
+            >
+            and concert for
+            <span style="font-weight: bold; font-style: italic"
+              >women throughout</span
+            >
+            <span
+              style="font-weight: bold"
+              class="mega righteous-regular uppercase"
+              >Washington</span
+            >
+          </p>
+        </div>
+        <div class="event-info">
+          <p style="font-weight: 600" class="event-date">9/7/2025</p>
+          <p style="font-weight: 600" class="event-location uppercase">
+            Museum of Flight
+          </p>
+        </div>
+        <div class="register-now uppercase">
+          <p style="font-weight: 600">register</p>
+          <p style="font-weight: 600">now</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Evening Highlights Section -->
+  <div id="highlights" class="container">
+    <h2 class="highlights-main-title">Evening highlights</h2>
+    <div class="highlight-item">
+      <h3 class="highlight-title righteous-regular uppercase">
+        Mega Challah Bake
+      </h3>
+      <p class="highlight-description">
+        <span class="uppercase">Experience</span> the magic of hundreds of women
+        coming together to mix, knead, and shape challah in unison. Guided with
+        meaning and tradition, the challah bake is more than a culinary
+        experience—it’s a moment of connection, prayer, and shared purpose.
+        Whether you’re a seasoned baker or it’s your first time, you’ll leave
+        inspired, uplifted, and with fresh challahs ready to bring light and
+        blessing into your home.
+      </p>
+      <img src="./assets/challah.png" alt="Picture of challah." />
+    </div>
+    <div class="highlight-item">
+      <h3 class="highlight-title uppercase">
+        Live Concert with Devorah Schwartz
+      </h3>
+      <p class="highlight-description">
+        <span class="uppercase">Devorah Schwartz</span> is a singer and
+        songwriter whose soulful voice and heartfelt lyrics resonate deeply with
+        women of all backgrounds. With a unique blend of timeless technique and
+        contemporary sound, her music explores themes of healing, growth, and
+        connection. Known for making every listener feel seen, Devorah brings a
+        powerful, emotional presence to the stage—promising an unforgettable
+        concert that will uplift, inspire, and leave you feeling spiritually
+        renewed.
+      </p>
+      <img src="./assets/singer.png" alt="Picture of challah." />
+    </div>
+    <button id="register" class="register-btn">REGISTER</button>
+  </div>
+
+  <!-- Partnership Section -->
+  <div id="partner" class="container">
+    <div class="content-section">
+      <div>
+        <!-- Using a placeholder image as the wheat SVG is not available -->
+        <img
+          src="./assets/wheat.png"
+          alt="Wheat graphic"
+          class="partner-image"
+        />
+      </div>
+      <div>
+        <h2 class="partner-title righteous-regular uppercase">
+          Partner With The Gathering
+        </h2>
+        <p class="partner-description">
+          <span
+            class="uppercase"
+            style="font-weight: bold; text-shadow: 0 0 1px rgb(20, 11, 66)"
+            >Be a part</span
+          >
+          of this extraordinary evening of Jewish women’s unity by becoming a
+          partner in The Gathering. Your support helps make this meaningful
+          experience possible and allows us to reach and inspire women across
+          Washington State. Opportunities are available to sponsor the event,
+          dedicate in honor of a loved one, or advertise your business with logo
+          placement in our event materials. Join us in empowering women,
+          building community, and spreading light—one challah, one song, one
+          soul at a time.
+        </p>
+        <a href="#" class="partner-with-us-button">partner with us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="main-footer">
+    <div class="container">
+      <h3 class="footer-contact-title righteous-regular uppercase">
+        Have any questions? Feel free to reach out at
+      </h3>
+      <p class="footer-contact-email">ThegatheringPNW@gmail.com</p>
+      <p class="footer-credit">A Project of the Chabad Centers of Washington</p>
+      <img src="./assets/chabad houses.png" alt="Chabad houses." />
+    </div>
+  </div>
+</html>

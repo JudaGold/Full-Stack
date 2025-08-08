@@ -1,0 +1,22 @@
+{
+  "name": "chef-claude",
+  "description": "https://scrimba.com/fullstack-path-c0fullstack/~0z7v/s0si2g7q61/head",
+  "type": "module",
+  "envFile": "${workspaceFolder}/.env",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "19.0.0-rc-8b08e99e-20240713",
+    "react-dom": "19.0.0-rc-8b08e99e-20240713",
+    "@anthropic-ai/sdk": "0.27.3",
+    "react-markdown": "9.0.1",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*"
+  }
+}
