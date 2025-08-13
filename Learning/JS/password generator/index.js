@@ -112,6 +112,7 @@ function generatePasswords() {
       temp2 += randomletterSelector();
       temp1 += randomletterSelector();
     }
+    err = "Click on a password to copy it to your clipboard!";
   }
 
   err !== ""
